@@ -25,7 +25,6 @@ Para executar o script Python usando o arquivo `.sh`, siga os passos abaixo:
 fechar_programa = {'esc', 'ESC', 'Esc'}
 ```
 - Objetivo: Armazena as formas permitidas para encerrar o programa.
-- Tipo: Conjunto (set).
 - Uso: Permite verificar se a entrada do usuário corresponde a uma das palavras para fechar o programa.
 
 2. Estrutura do loop principal
