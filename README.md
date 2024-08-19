@@ -54,7 +54,6 @@ fechar_programa = {'esc', 'ESC', 'Esc'}
 
 4. Conversão e Validação das Entradas
 ```python
-Copiar código
     try:
         num1 = float(num1)
         num2 = float(num2)
@@ -67,7 +66,6 @@ Copiar código
 
 5. Exibição das Opções de Operação e Realização da Operação
 ```python
-Copiar código
     print('\nEscolha a operação:')
     print('1: Adição')
     print('2: Subtração')
@@ -81,7 +79,6 @@ Copiar código
 
 6. Processamento da Operação Selecionada
 ```python
-Copiar código
     if valor == '1':
         resultado = num1 + num2
         print('\n', str(num1) + ' + ' + str(num2) + ' = ' + str(resultado),'\n')
