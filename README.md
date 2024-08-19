@@ -3,7 +3,10 @@
 
 Este repositório contém um script Python que simula uma calculadora básica
 
-## Como executar o script
+## Explicando os arquivos
+
+- calculadora.py: Contém o código da calculadora Python.
+- executar_calculadora.sh: É um script shell que verifica se o Python está instalado e, em seguida, executa o script da calculadora.py.
 
 ### Executando o arquivo .sh
 
