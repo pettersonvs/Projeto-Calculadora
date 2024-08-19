@@ -26,6 +26,7 @@ fechar_programa = {'esc', 'ESC', 'Esc'}
 - Objetivo: Armazena as formas permitidas para encerrar o programa.
 - Tipo: Conjunto (set).
 - Uso: Permite verificar se a entrada do usuário corresponde a uma das palavras para fechar o programa.
+
 2. Estrutura do loop principal
   ```python
   print('\nCALCULADORA\n')
@@ -33,6 +34,20 @@ fechar_programa = {'esc', 'ESC', 'Esc'}
   while True:
     print('\nDigite "esc" a qualquer momento para fechar o programa.\n')
   ```
--Objetivo: Imprime uma mensagem inicial e inicia um loop infinito.
+- Objetivo: Imprime uma mensagem inicial e inicia um loop infinito.
+- Uso: O loop permite que o programa continue rodando até que o usuário escolha encerrar.
 
--Uso: O loop permite que o programa continue rodando até que o usuário escolha encerrar.
+3. Solicitação de Entrada do Usuário
+```python
+    num1 = input('\nDigite o primeiro número: ')
+    if num1 in fechar_programa:
+        print('\nPrograma encerrado.')
+        break
+
+    num2 = input('Digite o segundo número: ')
+    if num2 in fechar_programa:
+        print('\nPrograma encerrado.')
+        break
+```
+- Objetivo: Solicita dois números ao usuário.
+- Verificação de Fechamento: Checa se a entrada é uma das palavras para encerrar o programa. Se for, imprime uma mensagem e encerra o loop.
