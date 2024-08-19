@@ -51,3 +51,57 @@ fechar_programa = {'esc', 'ESC', 'Esc'}
 ```
 - Objetivo: Solicita dois números ao usuário.
 - Verificação de Fechamento: Checa se a entrada é uma das palavras para encerrar o programa. Se for, imprime uma mensagem e encerra o loop.
+
+4. Conversão e Validação das Entradas
+```python
+Copiar código
+    try:
+        num1 = float(num1)
+        num2 = float(num2)
+    except ValueError:
+        print('\nEntrada inválida. Por favor, insira números válidos.\n')
+        continue
+```
+- Converte as entradas para float e lida com entradas inválidas.
+- Se a conversão falhar (por exemplo, se o usuário inserir texto não numérico), imprime uma mensagem de erro e continua para a próxima iteração do loop.
+
+5. Exibição das Opções de Operação e Realização da Operação
+```python
+Copiar código
+    print('\nEscolha a operação:')
+    print('1: Adição')
+    print('2: Subtração')
+    print('3: Multiplicação')
+    print('4: Divisão')
+
+    valor = input('\nSelecione a operação desejada: ')
+```
+- Exibe as opções de operações matemáticas disponíveis.
+- Solicita ao usuário que escolha uma operação.
+
+6. Processamento da Operação Selecionada
+```python
+Copiar código
+    if valor == '1':
+        resultado = num1 + num2
+        print('\n', str(num1) + ' + ' + str(num2) + ' = ' + str(resultado),'\n')
+    elif valor == '2':
+        resultado = num1 - num2
+        print('\n', str(num1) + ' - ' + str(num2) + ' = ' + str(resultado),'\n')
+    elif valor == '3':
+        resultado = num1 * num2
+        print('\n', str(num1) + ' * ' + str(num2) + ' = ' + str(resultado),'\n')
+    elif valor == '4':
+        if num2 != 0:   # Verifica se o denominador (segundo número) é zero
+            resultado = num1 / num2
+            print('\n', str(num1) + ' / ' + str(num2) + ' = ' + str(resultado),'\n')
+        else:
+            print('Erro: Divisão por zero não é permitida.\n')
+    elif valor in fechar_programa:
+        print('\nPrograma encerrado.')
+        break
+    else:
+        print('Opção inválida. Por favor, escolha uma operação válida.')
+```
+- Realiza a operação matemática de acordo com a escolha do usuário e imprime o resultado.
+- Se o usuário escolher uma opção não válida ou uma forma de encerrar o programa, lida adequadamente com esses casos.
