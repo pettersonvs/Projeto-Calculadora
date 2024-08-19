@@ -16,3 +16,13 @@ Para executar o script Python usando o arquivo `.sh`, siga os passos abaixo:
 3. Execute o seguinte comando no terminal:
    ```bash
    ./executar_calduladora.sh
+
+### Explicação do código em Python
+
+1. Dicionário de fechamento
+```python
+fechar_programa = {'esc', 'ESC', 'Esc'}
+```
+- Objetivo: Armazena as formas permitidas para encerrar o programa.
+- Tipo: Conjunto (set).
+- Uso: Permite verificar se a entrada do usuário corresponde a uma das palavras para fechar o programa.
