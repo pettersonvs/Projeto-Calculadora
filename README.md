@@ -1,5 +1,4 @@
-# Projeto1
- Calculadora
+# Calculadora
 
 Este repositório contém um script Python que simula uma calculadora básica
 
