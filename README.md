@@ -14,7 +14,7 @@ Para executar o script Python usando o arquivo `.sh`, siga os passos abaixo:
 1. Precisa ter os dois arquivos no diretório
 2. Abra o terminal
 3. Navegue até o diretório do repositório clonado.
-   ex:
+   - Ex.:
    ```bash
    cd /mnt/c/Users/SeuUsuario/repositorio
 5. Execute o seguinte comando no terminal:
