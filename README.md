@@ -31,7 +31,7 @@ fechar_programa = {'esc', 'ESC', 'Esc'}
   print('\nCALCULADORA\n')
 
 while True:
-    print('\nDigite "esc" a qualquer momento para fechar o programa.\n')
-
+    print('\nDigite "esc" a qualquer momento para fechar o programa.\n')```
+    
 -Objetivo: Imprime uma mensagem inicial e inicia um loop infinito.
 -Uso: O loop permite que o programa continue rodando até que o usuário escolha encerrar.
